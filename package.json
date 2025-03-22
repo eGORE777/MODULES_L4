@@ -1,0 +1,23 @@
+{
+  "name": "modules_l4",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node --env-file=.env.production src/index.js",
+    "start": "nodemon --env-file=.env.development src/index.js",
+    "deploy": "node --env-file=.env.domain src/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  },
+  "dependencies": {
+    "axios": "^1.8.3",
+    "bcrypt": "^5.1.1",
+    "dotenv": "^16.4.7"
+  }
+}
